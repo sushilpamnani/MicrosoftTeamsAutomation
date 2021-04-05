@@ -1,3 +1,6 @@
+# Enter Teams ID on line 38
+# Enter your Password on line 44
+
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -32,13 +35,13 @@ driver.get('https://login.microsoftonline.com/common/oauth2/authorize?response_t
 print(driver.title)
 
 search = driver.find_element_by_id("i0116")
-search.send_keys("sushil16894@tsecedu.org")
+search.send_keys("")                                                        # Enter your Teams ID here
 search.send_keys(Keys.RETURN)
 
 time.sleep(2)
 
 search = driver.find_element_by_id("i0118")
-search.send_keys("HB:GW?s13")
+search.send_keys("")                                                        # Enter your Password Here
 search.send_keys(Keys.RETURN)
 
 # time.sleep(2)
