@@ -44,12 +44,12 @@ search = driver.find_element_by_id("i0118")
 search.send_keys("")                                                        # Enter your Password Here
 search.send_keys(Keys.RETURN)
 
-# time.sleep(2)
+time.sleep(2)
 
 search = driver.find_element_by_id("idSIButton9")
 search.send_keys(Keys.RETURN)
 
-# tiem.sleep(2)
+tiem.sleep(2)
 
 try:
     element = WebDriverWait(driver, 15).until(
